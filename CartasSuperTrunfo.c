@@ -9,7 +9,7 @@
 int main() {
     //Carta 1:
     char c1_estado;
-    char c1_codigo[3];
+    char c1_codigo[4];
     char c1_nomeDaCidade[50];
     int c1_população;
     float c1_area;
@@ -25,8 +25,9 @@ int main() {
     int c2_pib;
     int c2_numedoDePontosTuristicos;
 
+    //Inserindo os dados da Carta 1:
     printf("Informe o Estado da Cidade_01 (um caractere de 'A a Z'): \n");
-    scanf("%c", c1_estado);
+    scanf("%c", &c1_estado);
     printf("Informe o código da Cidade_01 (O Estado + o número): \n");
     scanf("%s", c1_codigo);
     printf("Informe o nome da Cidade_01 (até 50 caracteres): \n");
@@ -40,11 +41,39 @@ int main() {
     printf("Digite o número de pontos turísticos da Cidade_01 \n");
     scanf("%d", &c1_numedoDePontosTuristicos);
 
-    //prints da cidade_01
-    printf("UF %c\n", c1_estado);
-    printf("Código %s\n", c1_codigo);
-    printf("Nome da cidade_01: %s\n", c1_nomeDaCidade);
+    //prints da Carta 1
+    printf("\n\nUF:  %c\n", c1_estado);
+    printf("Código: %s\n", c1_codigo);
+    printf("Nome da cidade: %s\n", c1_nomeDaCidade);
+    printf("Popupação de %d habitantes.\n", c1_população);
+    printf("A área de cidade é de %f KM2.\n", c1_area);
+    printf("A cidade tem um PIB de R$ %i.\n", c1_pib);
+    printf("Existem %i pontos turísticos na cidade.\n\n", c1_numedoDePontosTuristicos);
 
+    //Inserindo os dados da Carta 2:
+    printf("Informe o Estado da Cidade_02 (um caractere de 'A a Z'): \n");
+    scanf(" %c", &c2_estado);  // Um espaço pra poder não registrar o valor vindo da linha anterior
+    printf("Informe o código da Cidade_02 (O Estado + o número): \n");
+    scanf("%s", c2_codigo);
+    printf("Informe o nome da Cidade_02 (até 50 caracteres): \n");
+    scanf("%s", c2_nomeDaCidade);
+    printf("Digite o número da população da Cidade_02: \n");
+    scanf("%d", &c2_população);
+    printf("Digite a área em km2 da Cidade_02: \n");
+    scanf("%f", &c2_area);
+    printf("Informe o PIB da Cidade_02: \n");
+    scanf("%d", &c2_pib);
+    printf("Digite o número de pontos turísticos da Cidade_02 \n");
+    scanf("%d", &c2_numedoDePontosTuristicos);
+
+    //prints da Carta 2
+    printf("\n\nUF:  %c\n", c2_estado);
+    printf("Código: %s\n", c2_codigo);
+    printf("Nome da cidade: %s\n", c2_nomeDaCidade);
+    printf("Popupação de %d habitantes.\n", c2_população);
+    printf("A área de cidade é de %f KM2.\n", c2_area);
+    printf("A cidade tem um PIB de R$ %i.\n", c2_pib);
+    printf("Existem %i pontos turísticos na cidade.\n\n", c2_numedoDePontosTuristicos);
     
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
